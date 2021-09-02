@@ -11,15 +11,14 @@ import java.util.Scanner;
 
 public class App {
 
-    public static int menuApp() throws InterruptedException, IOException {
+    public static void main(String[] args) throws Exception {
+
+        Calculadora calc = new Calculadora();
+
         int op = 6;
+        String dev = "Lucas Souza";
 
         Scanner escolha = new Scanner(System.in);
-
-        if (System.getProperty("os.name").contains("Windows"))
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-        else
-            Runtime.getRuntime().exec("clear");
 
         System.out.println("\n*************-- Bem Vindo! Vamos Calcular ? --*************\n");
         System.out.println("1 - Soma -");
@@ -31,16 +30,6 @@ public class App {
         System.out.print("Escolha uma operação, Digite 0 para sair: ");
 
         op = escolha.nextInt();
-
-        return op;
-    }
-
-    public static void main(String[] args) throws Exception {
-
-        Calculadora calc = new Calculadora();
-
-        int op = menuApp();
-        String dev = "Lucas Souza";
 
         while (op != 0) {
 
@@ -59,7 +48,6 @@ public class App {
                     int resultado = calc.Som(a, b);
 
                     System.out.println("O resultado da sua soma é: " + resultado);
-                    menuApp();
                 } catch (RuntimeException e) {
                     System.out.println("Valor inserido invalido.");
                     System.out.print("Execute a aplicação novamente inserindo um valor válido.");
@@ -81,7 +69,6 @@ public class App {
                     int resultado = calc.Sub(a, b);
 
                     System.out.println("O resultado da sua subtração é: " + resultado);
-                    menuApp();
                 } catch (RuntimeException e) {
                     System.out.println("Valor inserido invalido.");
                     System.out.println("Execute a aplicação novamente inserindo um valor válido.");
@@ -103,7 +90,6 @@ public class App {
                     int resultado = calc.Mul(a, b);
 
                     System.out.println("O resultado da sua multiplicação é: " + resultado);
-                    menuApp();
                 } catch (RuntimeException e) {
                     System.out.println("Valor inserido invalido.");
                     System.out.println("Execute a aplicação novamente inserindo um valor válido.");
@@ -125,7 +111,6 @@ public class App {
                     int resultado = calc.Div(a, b);
 
                     System.out.println("Seu resultado é: " + resultado);
-                    menuApp();
                 } catch (RuntimeException e) {
                     System.out.println("Valor inserido invalido.");
                     System.out.println("Execute a aplicação novamente inserindo um valor válido.");
@@ -135,7 +120,6 @@ public class App {
             } else if (op == 5) {
                 System.out.println("Desenvolvido por: " + dev + " © 2021 deverebor,Todos os direitos reservados.");
                 System.out.println("Saiba mais - https://github.com/deverebor/");
-                menuApp();
             }
             break;
 
