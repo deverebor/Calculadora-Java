@@ -1,5 +1,42 @@
-# Calculadora em Java
+<h1 align="center">Calculadora em Java</h1>
 
-Projeto requisitado pelo professor Edson Mota como forma avaliativa da matéria de POO.
+<p align="center">
+  <img src="http://wiki.stat.ucla.edu/distributome/uploads/a/a2/JAVA_animated.gif">
+</p>
+
+Projeto requisitado pelo professor _Edson Mota_ como forma avaliativa da matéria de POO.
 
 Totalmente feito em Java utilizando pacotes da própria linguagem.
+
+<img src="assets/calc.gif" width="1280" heigh="720">
+
+## Dependências para rodar a aplicação
+
+- `Java 11.0 +`
+- `Compilador Java.`
+
+## Oque aprendi nesse projeto ?
+
+- Utilização de bibliotecas como o Scanner.
+  ```
+    import java.util.Scanner;
+  ```
+- Criação de um "menu escolhas" no console.
+- Estrutura `try catch` para tratar erros.
+  ```
+  try {
+  
+  } catch (Exception e) {
+  
+  }
+  ```
+- Funcionalidade `Exception` na declaração do main.
+
+## Equipe composta por:
+
+* Lucas Pereira Souza.
+<a href="https://www.linkedin.com/in/lucas-souza-dev/">
+        <img height="25px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+</a>
+
+📩 lucasp.sdev@gmail.com

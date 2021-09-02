@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Calculadora c = new Calculadora();
+        Calculadora calc = new Calculadora();
 
         int op = 6;
         String dev = "Lucas Souza";
@@ -43,7 +43,7 @@ public class App {
                     System.out.print("Insira o segundo valor a ser somado: ");
                     int b = val1.nextInt();
 
-                    int resultado = c.Som(a, b);
+                    int resultado = calc.Som(a, b);
 
                     System.out.println("O resultado da sua soma é: " + resultado);
                 } catch (RuntimeException e) {
@@ -64,7 +64,7 @@ public class App {
                     System.out.print("Insira o segundo valor a ser subtraído: ");
                     int b = val1.nextInt();
 
-                    int resultado = c.Sub(a, b);
+                    int resultado = calc.Sub(a, b);
 
                     System.out.println("O resultado da sua subtração é: " + resultado);
                 } catch (RuntimeException e) {
@@ -85,7 +85,7 @@ public class App {
                     System.out.print("Insira o segundo valor a ser multiplicado: ");
                     int b = val1.nextInt();
 
-                    int resultado = c.Mul(a, b);
+                    int resultado = calc.Mul(a, b);
 
                     System.out.println("O resultado da sua multiplicação é: " + resultado);
                 } catch (RuntimeException e) {
@@ -106,7 +106,7 @@ public class App {
                     System.out.print("Insira o segundo valor a ser dividido: ");
                     int b = val1.nextInt();
 
-                    int resultado = c.Div(a, b);
+                    int resultado = calc.Div(a, b);
 
                     System.out.println("Seu resultado é: " + resultado);
                 } catch (RuntimeException e) {
