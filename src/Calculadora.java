@@ -12,6 +12,10 @@ public class Calculadora {
 
   public int Div(int a, int b) {
 
+    if (b == 0) {
+      System.err.print("\n[ERRO]:: Não é possível dividir um número por 0.");
+    }
+
     return a / b;
   }
 
