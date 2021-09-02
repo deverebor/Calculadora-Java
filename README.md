@@ -1,4 +1,4 @@
-<h1 align="center">Calculadora em Java</h1>
+<h1 align="center">📱 Calculadora em Java</h1>
 
 <p align="center">
   <img src="http://wiki.stat.ucla.edu/distributome/uploads/a/a2/JAVA_animated.gif">
@@ -8,7 +8,7 @@ Projeto requisitado pelo professor _Edson Mota_ como forma avaliativa da matéri
 
 Totalmente feito em Java utilizando pacotes da própria linguagem.
 
-<img src="assets/calc.gif" width="1280" heigh="720">
+<img src="assets/calc.gif">
 
 ## Dependências para rodar a aplicação
 
