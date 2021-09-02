@@ -8,7 +8,7 @@ Projeto requisitado pelo professor _Edson Mota_ como forma avaliativa da matéri
 
 Totalmente feito em Java utilizando pacotes da própria linguagem.
 
-<img src="assets/calc.gif">
+<img src="https://media.giphy.com/media/6lwejQcO9CfLJvvAqI/giphy-downsized-large.gif?cid=790b7611e475f90f1ee4c53b8ed4a061dbfa0f878b4260dc&rid=giphy-downsized-large.gif&ct=g">
 
 ## Dependências para rodar a aplicação
 
