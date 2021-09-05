@@ -14,7 +14,7 @@ public class App {
 
         Calculadora calc = new Calculadora();
 
-        int op = 6;
+        int op;
         String dev = "Lucas Souza";
 
         do {
@@ -110,7 +110,7 @@ public class App {
                         int resultado = calc.Div(a, b);
 
                         System.out.print("\n**************************");
-                        System.out.println("\nSeu resultado é: " + resultado);
+                        System.out.println("\nO resultado da divisão é: " + resultado);
                         System.out.println("**************************");
 
                     } catch (RuntimeException e) {
@@ -121,8 +121,12 @@ public class App {
                     break;
 
                 case 5:
-                    System.out.println("Desenvolvido por: " + dev + " © 2021 deverebor,Todos os direitos reservados.");
-                    System.out.println("Saiba mais - https://github.com/deverebor/");
+
+                    System.out.println("\n***************-> SOBRE A APLICAÇÃO <-*********************");
+                    System.out.print("Desenvolvido por: " + dev + " © 2021 deverebor,Todos os direitos reservados.");
+                    System.out.print("\nSaiba mais - https://github.com/deverebor/\n");
+                    System.out.println("************************************************************\n");
+
                     break;
 
             }
